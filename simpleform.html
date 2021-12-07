@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Minh's Form</title>
+  <style>
+    .wufoo {
+      font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+  </style>
 </head>
 <body>
 <h1>Order Form</h1>
-<form action="" method="">
+<form class="wufoo" action="simpleform.html" method="get">
   <label for="item">What would you want to buy?</label><br>
   <select id="item">
     <option value="gun">Gun</option>
@@ -19,15 +24,17 @@
   <label for="type2"><input id="type2" name="item" type="radio">2 - $20</label><br>
   <label for="type3"><input id="type3" name="item" type="radio">3 - $25</label><br><br>
 
-  <label>Name</label><br>
-  <input class="name" type="text" placeholder="First Name" required>
-  <input class="name" type="text" placeholder="Last Name" required><br><br>
+  <label>Name <span style="color: red">*</span></label><br>
+  <input class="name" type="text" placeholder="First Name" size="16" required>
+  <input class="name" type="text" placeholder="Last Name" size="16" required><br><br>
 
   <label for="email">Email</label><br>
-  <input id="email" type="email"><br><br>
+  <input id="email" type="email" size="35"><br><br>
 
   <label>Phone Number</label><br>
-  <input type="tel"><br><br>
+  <input type="tel" size="5"> -
+  <input type="tel" size="5"> -
+  <input type="tel" size="5"><br><br>
 
   <button type="submit">Submit</button>
 </form>
