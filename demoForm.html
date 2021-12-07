@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Minh's Form</title>
 </head>
 <body>
-$END$
+<h1>Order Form</h1>
+<form action="" method="">
+  <label for="item">What would you want to buy?</label><br>
+  <select id="item">
+    <option value="gun">Gun</option>
+    <option value="knife">Knife</option>
+    <option value="tube">Tube</option>
+  </select>
+
+  <p>How many would you like to order?</p>
+  <label for="type1"><input id="type1" name="item" type="radio">1 - $10</label><br>
+  <label for="type2"><input id="type2" name="item" type="radio">2 - $20</label><br>
+  <label for="type3"><input id="type3" name="item" type="radio">3 - $25</label><br><br>
+
+  <label>Name</label><br>
+  <input class="name" type="text" placeholder="First Name" required>
+  <input class="name" type="text" placeholder="Last Name" required><br><br>
+
+  <label for="email">Email</label><br>
+  <input id="email" type="email"><br><br>
+
+  <label>Phone Number</label><br>
+  <input type="tel"><br><br>
+
+  <button type="submit">Submit</button>
+</form>
 </body>
 </html>
