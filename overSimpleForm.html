@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Codegym form</title>
 </head>
-<body style="border: 15px solid cyan; width: 40%; font-family: 'Academy Engraved LET'; font-size: larger">
-    <p style="background-color: coral; height: 30px; text-align: center; color: azure">Sở thích của bạn</p>
-    <form action="#" method="post">
+<body>
+
+    <form action="#" method="post" style="border: 15px solid cyan; width: 40%; font-family: 'Academy Engraved LET'; font-size: larger">
+        <h2 style="background-color: coral; height: 35px; text-align: center; color: azure; font-family: monospace" >Sở thích của bạn</h2>
         <label for="name">Họ và tên</label>
         <input id="name" type="text" placeholder="Nguyen Hoang Minh"><br><br>
         
@@ -25,6 +26,36 @@
         <button type="submit" value="submit" style="margin-left: 150px">Gửi thông tin</button>
         <button type="reset" value="reset" style="">Nhập lại</button>
         <br><br>
+    </form>
+
+    <hr>
+    <br><br><br>
+
+    <form action="#" method="post" style="background-color: blanchedalmond; width: 50%" >
+        <h2 style="background-color: aquamarine ; height: 35px; text-align: center; color: indianred; font-family: monospace" >Đăng ký học </h2>
+        <label for="name2">Họ và tên</label>
+        <input id="name2" type="text"><br><br>
+        <label for="birth">Ngày sinh</label>
+        <input id="birth" type="date"><br><br>
+        <label>Giới tính</label>
+        <input type="radio" value="male" name="gender">Nam
+        <input type="radio" value="female" name="gender">Nữ<br><br>
+        <label for="address">Địa chỉ</label>
+        <textarea id="address" name="address" cols="30" rows="7"></textarea><br><br>
+        <label for="class">Lớp</label>
+        <select name="class" id="class">
+            <option value="" disabled selected>-Chọn lớp-</option>
+            <option value="class1">C1121I1</option>
+            <option value="class2">C1121H1</option>
+            <option value="class3">C6699GG</option>
+        </select><br><br>
+        <label for="email2">Email</label>
+        <input id="email2" type="email"><br><br>
+        <label for="number">Điện thoại</label>
+        <input id="number" type="tel" name="phone"><br><br>
+
+        <button type="submit" value="submit" style="margin-left: 150px">Gửi thông tin</button>
+        <button type="reset" value="reset" style="">Nhập lại</button>
     </form>
 </body>
 </html>
